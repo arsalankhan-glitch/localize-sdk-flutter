@@ -1,0 +1,24 @@
+name: flutter_localize_sdk
+description: Flutter SDK for fetching localization keys from the Localization API.
+version: 0.1.0
+homepage: https://github.com/arsalankhan-glitch/localize-sdk
+repository: https://github.com/arsalankhan-glitch/localize-sdk
+documentation: https://github.com/arsalankhan-glitch/localize-sdk
+issue_tracker: https://github.com/arsalankhan-glitch/localize-sdk/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  path: ^1.9.0
+  path_provider: ^2.1.2
+  crypto: ^3.0.3
+  synchronized: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
