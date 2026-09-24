@@ -99,7 +99,7 @@ class LocalizeConfig {
   const LocalizeConfig({
     required this.apiKey,
     this.platform = 'flutter',
-    this.baseUrl = 'https://localize-dev-api.adres.ae',
+    this.baseUrl = 'https://localize-api.adres.ae',
     this.onKeysUpdated,
     this.fallbackLocale,
     this.bundleFallback,
