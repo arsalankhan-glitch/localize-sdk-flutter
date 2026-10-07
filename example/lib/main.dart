@@ -5,7 +5,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await LocalizeSDK.configure(
-    apiKey: 'pk_example', // Replace with real API key for live test
+    apiKey: const String.fromEnvironment('LOCALIZE_EXAMPLE_API_KEY'),
     fallbackLocale: 'en',
     enableLogging: true,
     localLoader: () async {
