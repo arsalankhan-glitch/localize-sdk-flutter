@@ -38,6 +38,7 @@ out/
 /ios/.build/
 /ios/DerivedData/
 /ios/Example/Build/
+xcuserdata/
 /ios/Example/Index/
 /ios/Example/*.xcworkspace
 /ios/Example/xcuserdata/
