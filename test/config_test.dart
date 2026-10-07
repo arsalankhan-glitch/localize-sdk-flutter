@@ -51,7 +51,7 @@ void main() {
       const config = LocalizeConfig(apiKey: 'pk');
 
       expect(config.platform, 'flutter');
-      expect(config.baseUrl, 'https://localize-dev-api.adres.ae');
+      expect(config.baseUrl, 'https://localize-api.adres.ae');
       expect(config.timeoutSeconds, 10);
       expect(config.enableLogging, true);
     });

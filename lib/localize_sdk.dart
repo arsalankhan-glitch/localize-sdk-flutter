@@ -47,7 +47,7 @@ class LocalizeSDK {
     final config = LocalizeConfig(
       apiKey: apiKey,
       platform: platform,
-      baseUrl: baseUrl ?? 'https://localize-dev-api.adres.ae',
+      baseUrl: baseUrl ?? 'https://localize-api.adres.ae',
       onKeysUpdated: onKeysUpdated,
       fallbackLocale: fallbackLocale,
       bundleFallback: bundleFallback,
