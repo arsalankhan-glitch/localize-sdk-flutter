@@ -1,10 +1,27 @@
-# Localize SDK for Flutter
+# Localize Flutter SDK
 
-Dart SDK that fetches translations from the Localize API and falls back to bundled strings when offline. Requires Dart 3.0+.
+[![Version](https://img.shields.io/github/v/tag/arsalankhan-glitch/localize-sdk-flutter?sort=semver&label=version)](https://github.com/arsalankhan-glitch/localize-sdk-flutter/tags) [![License](https://img.shields.io/github/license/arsalankhan-glitch/localize-sdk-flutter)](LICENSE) [![Flutter](https://img.shields.io/badge/Flutter-compatible-02569B.svg)](https://flutter.dev) ![Dart 3.0+](https://img.shields.io/badge/Dart-3.0%2B-0175C2.svg)
 
-Example app: [`example/`](example/). The platform folders aren't committed, so run `flutter create .` in `example/` once, then `flutter run --dart-define=LOCALIZE_EXAMPLE_API_KEY=pk_xxx`.
+## 👋 Introduction
 
-## Installation
+Localize lets your team manage your app's text and translations in one place and update them without shipping a new release. The SDK downloads the latest translations at runtime, caches them on the device, and falls back to the strings bundled in your app when it's offline.
+
+This is the Dart SDK for Flutter apps.
+
+Also available for [iOS](https://github.com/arsalankhan-glitch/localize-sdk-ios) · [Android](https://github.com/arsalankhan-glitch/localize-sdk-android) · [React Native](https://github.com/arsalankhan-glitch/localize-sdk-react-native).
+
+To get started, sign up [here](https://localiq.yaxbi.com/signup).
+
+## 📱 Example app
+
+See [`example/`](example/). The platform folders aren't committed, so run `flutter create .` in `example/` once, then `flutter run --dart-define=LOCALIZE_EXAMPLE_API_KEY=pk_xxx`.
+
+## 📋 Requirements
+
+- Dart 3.0+
+- Flutter 3.10 or later
+
+## 🎉 Installation
 
 Add to `pubspec.yaml`:
 
@@ -22,7 +39,7 @@ Then run:
 flutter pub get
 ```
 
-## Setup
+## 🚀 Setup
 
 Call `configure` in `main` before `runApp`:
 
@@ -42,7 +59,7 @@ void main() async {
 }
 ```
 
-## Usage
+## 💡 Usage
 
 ```dart
 // Simple string
@@ -61,7 +78,7 @@ LocalizeSDK.setLocale('ar');
 LocalizeSDK.refresh();
 ```
 
-## Configuration options
+## ⚙️ Configuration options
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -72,7 +89,7 @@ LocalizeSDK.refresh();
 | `enableLogging` | `bool` | `true` | Print debug logs |
 | `onKeysUpdated` | `VoidCallback?` | `null` | Called after each successful refresh |
 
-## How it works
+## 🔍 How it works
 
 1. On `configure`, the SDK fetches all translations from the API (every locale) and caches them on disk.
 2. If the fetch fails, the SDK uses the cached translations for the current locale.
@@ -80,6 +97,6 @@ LocalizeSDK.refresh();
 4. Call `refresh()` at any time to pull the latest translations in the background.
 5. Call `setLocale("ar")` to switch locale. The SDK reads that locale from the cache, with no network request.
 
-## License
+## 📄 License
 
 [MIT](LICENSE)
